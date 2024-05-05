@@ -20,7 +20,6 @@ from myapp.views import CustomLoginView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
     path('login_signup', views.login_signup_view, name='login_signup'),
     path('login/', CustomLoginView.as_view(), name='login'),
     path('home', views.home, name='home'),
